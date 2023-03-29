@@ -1,3 +1,10 @@
+--Check to make sure the sample file is loaded and accessible on the S3 storage by issuing an AWS command
+
+aws s3 ls s3://delay-flights-bucket/dataset/
+
+
+
+
 CREATE EXTERNAL TABLE DelayedFlights 
 (
     FlightId int,
